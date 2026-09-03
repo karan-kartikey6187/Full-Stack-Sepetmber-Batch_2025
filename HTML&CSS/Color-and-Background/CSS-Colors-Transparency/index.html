@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Transparency</title>
+    <style>
+        h1 {
+            color: rgb(165, 7, 238);
+        }
+        .hex-color h2 {
+            color: #f008;
+            /* ff000088 */
+        }
+
+        .hex-color h3 {
+            color: #0f08;
+            /* 00ff0088 */
+        }
+
+        .hex-color p {
+            color: #00f8;
+            /* 0000ff88 */
+        }
+
+        /*Transparency Value Between 0-1 */
+        .RGBA-color h2 {
+            color: rgba(255, 0, 0, 0.5);
+        }
+
+        .RGBA-color h3 {
+            color: rgba(0, 255, 0, 0.5);
+        }
+
+        .RGBA-color p {
+            color: rgba(0, 0, 255, 0.5);
+        }
+
+        /*Transparency Value Between 0-1 */
+        .HSLA-color h2 {
+            color: hsla(0, 100%, 50%, 0.5);
+        }
+
+        .HSLA-color h3 {
+            color: hsla(120, 100%, 50%, 0.5);
+        }
+
+        .HSLA-color p {
+            color: hsla(240, 100%, 50%, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Color Transparency</h1>
+    <section class="hex-color">
+        <h2>Hexadecimal Color Codes Transparency</h2>
+        <h3>CSS HEX Colors Transparency</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, facere ipsum error in totam quod.</p>
+    </section>
+    <section class="RGBA-color">
+        <h2>RGBA Color Codes Transparency</h2>
+        <h3>CSS RGBA Colors Transparency</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, facere ipsum error in totam quod.</p>
+    </section>
+    <section class="HSLA-color">
+        <h2> HSLA Color Codes Transparency</h2>
+        <h3>CSS  HSLA Colors Transparency</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, facere ipsum error in totam quod.</p>
+    </section>
+</body>
+
+</html>

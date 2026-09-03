@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgb(69, 8, 236);
+    padding: 5px;
+    margin: auto;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation: move-box linear 3s infinite both;
+}
+
+@keyframes move-box{
+    0% {
+        translate: 0px 0px;
+    }
+    25% {
+        translate: 390px 390px;
+        background-color: aqua;
+    }
+    50% {
+        translate: 390px 0px;
+        background-color: blue;
+    }
+    75% {
+        translate: 0px 390px;
+        background-color: rgb(242, 102, 8);
+    }
+    100% {
+        translate: 0px 0px;
+        background-color: magenta;
+    }
+}

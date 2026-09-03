@@ -1,0 +1,15 @@
+let now = new Date()
+
+console.log(now)
+console.log("Year: "+now.getFullYear())
+console.log("Month: "+now.getMonth())
+console.log("Date: "+now.getDate())
+console.log("Day: "+now.getDay())
+console.log("Hours: "+now.getHours())
+console.log("Minuts: "+now.getMinutes())
+console.log("Seconds: "+now.getSeconds())
+console.log("Time: "+now.getTime())
+
+let date = new Date()
+let dateTen=date.setDate(now.getDate() + 10)
+console.log(new Date(dateTen))

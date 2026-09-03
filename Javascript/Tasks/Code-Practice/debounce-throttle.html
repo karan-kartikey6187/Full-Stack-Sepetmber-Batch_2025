@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        border: 1px solid gold;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <input type="text" id="input-feild" />
+      <p>Default Count: <span id="defoult-count">0</span></p>
+      <p>Debounce Count: <span id="debounce-count">0</span></p>
+      <p>Throttle Count: <span id="Throttle-count">0</span></p>
+    </div>
+    <script>
+      let inputEl = document.getElementById("input-feild");
+      let defoultEl = document.getElementById("defoult-count");
+      let debounceEl = document.getElementById("debounce-count");
+      let throttleEl = document.getElementById("Throttle-count");
+
+      let defaultCount = 0;
+      let debounceCount = 0;
+      let throttleCount = 0;
+
+      inputEl.addEventListener("input", function () {
+        defaultCount += 1;
+        defoultEl.innerHTML = defaultCount;
+      });
+
+      inputEl.addEventListener(
+        "input",
+        debounce(function () {
+          debounceCount += 1;
+          debounceEl.innerHTML = debounceCount;
+        }, 200),
+      );
+
+      inputEl.addEventListener(
+        "input",
+        throttle(function () {
+          throttleCount += 1;
+          throttleEl.innerHTML = throttleCount;
+        }, 200),
+      );
+
+      function debounce(fn, delay) {
+        let timer;
+        return function (...args) {
+          clearTimeout(timer);
+          timer = setTimeout(() => fn(...args),delay);
+        };
+      }
+    
+       function throttle(fn, delay){
+        let lastCall= 0;
+         return function(...args){
+           let now = Date.now();
+           if (now - lastCall >= delay){
+            lastCall =now;
+            fn(...args)
+           }
+           else{
+            clearTimeout(timer);
+            timer = setTimeout(() => fn(...args),delay);
+           }
+         }
+       }
+
+    </script>
+  </body>
+</html>

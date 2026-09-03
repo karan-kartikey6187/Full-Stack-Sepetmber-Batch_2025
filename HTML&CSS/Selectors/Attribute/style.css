@@ -1,0 +1,44 @@
+h1 {
+    color: brown;
+}
+
+h2 {
+    color:chocolate;
+}
+
+span[role="button"],
+[role="link"] {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+[role="heading"] {
+    color: purple;
+}
+
+[required] {
+    border-color: brown;
+}
+
+[for="Email"] , [for="name"] {
+    color: red;
+}
+
+[href^="https"] {
+    color: red;
+    background-color: aquamarine;
+}
+[href$="html"] {
+    color: brown;
+    background-color: plum;
+}
+[href*="us"] {
+    color: blue;
+    background-color: papayawhip;
+}
+[href~="page"] {
+    color: orangered;
+    background-color: skyblue;
+}
+

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Basics</title>
+  </head>
+  <body>
+    <!-- <script>
+      for (let number = 1; number <= 50; number++) {
+        for (let a = 1; a <= 10; a++) {
+          console.log(`${number} x ${a} = ${number * a}`);
+        }
+      }
+    </script> -->
+    <script>
+      // let number = prompt("Enter a Number For Table: ");
+      for (let i = 1; i <= 10; i++) {
+        console.log(number * i);
+      }
+    </script>
+    <script>
+      // let num = prompt("Enter a Number For Table: ");
+      let x = 1;
+      while (i <= 10) {
+        console.log(num * x);
+        i++;
+      }
+    </script>
+    <script>
+      // let input = prompt("Enter a Number For Table: ");
+      let k = 1;
+      do {
+        console.log(input * k);
+        k++;
+      } while (k <= 10);
+    </script>
+
+    <script>
+      const arry=["Apple","Mango","Banana","Grapes","Kiwi","Orange"]
+      for (items of arry){
+        console.log(items)
+    }
+    </script>
+    <script>
+      const array=["Apple","Mango","Banana","Grapes","Kiwi","Orange"]
+      array.forEach(function(val,index){
+        console.log(val ,index)
+      })
+    </script>
+    <script>
+      // Normal Function
+      let firstName="Karan"
+      let lastName="Kartikey"
+      function msg(x,y){
+        return "Hello" + " " + x + " " + y + " " + "how are you.."
+      }
+      fullMsg=msg(firstName,lastName);
+      console.log(fullMsg)
+    </script>
+    <script>
+      // Function Expression
+      const add = function(a,b){
+        // return a + b;
+        return (a * 1) + (b * 1);
+        // return +a + +b;
+      }
+      console.log(add(5,'7'));
+    </script>
+    <script>
+      // Arrow Function 
+      const greet = (name) => "Welcome" + " " + name;
+      console.log(greet("Karan"));
+    </script>
+    <script>
+      // String 
+      let name="Karan";
+      let str=`Hello My Name is ${name}`
+      console.log(str)
+      // Length
+      console.log(name.length)
+      // Length
+      console.log(name.length)
+      // Lowercase
+      console.log(name.toLowerCase())
+      console.log(name.toLocaleLowerCase())
+      // Uppercase
+      console.log(name.toUpperCase())
+      console.log(name.toLocaleUpperCase())
+      // charAt(index)
+      console.log(name.charAt(0))
+      console.log(name.charAt(1))
+      console.log(name.charAt(2))
+      console.log(name.charAt(3))
+      console.log(name.charAt(4))
+      // includes Case Sensitive
+       console.log(name.includes("ka"))
+      // Slice
+      console.log(name.slice(0,3))
+      // Replace
+      let newName = name.replace("Karan","Kartikey")
+      console.log(newName)
+      // trim()
+      let s ="  Hello  ";
+      console.log(s.trim());
+      // split(separator)
+      fullName = "My Name is Karan Kartikey"
+      let newStr= fullName.split()
+      console.log(newStr)
+      let newStr2= fullName.split("")
+      console.log(newStr2)
+      let newStr3= fullName.split(" ")
+      console.log(newStr3)
+      </script>
+  </body>
+</html>

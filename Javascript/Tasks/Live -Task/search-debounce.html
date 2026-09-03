@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search With Debounce</title>
+    <style>
+      .search-wrapper {
+        width: 300px;
+        margin-inline: auto;
+        margin-top: 100px;
+        padding-top: 10px;
+        border: 1px solid rgb(254, 70, 70);
+        padding-left: 10px;
+        background-color: azure;
+      }
+      .name-list {
+        list-style: none;
+        padding-left: 0px;
+      }
+      .list-item {
+        margin-bottom: 8px;
+        border: 1px solid rgb(63, 16, 248);
+        margin-right: 10px;
+        padding-block: 3px;
+        padding-left: 5px;
+      }
+
+      #searchBox {
+        background-color: rgb(250, 254, 255);
+        height: 20px;
+        width: 200px;
+        padding-left: 5px;
+        border: 1px solid maroon;
+        font-size: 20px;
+        padding-block: 4px;
+      }
+
+      #noResult {
+        display: none;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search-wrapper">
+      <input type="text" id="searchBox" placeholder="Search name" />
+      <ul class="name-list">
+        <li class="list-item">Himanshu</li>
+        <li class="list-item">Ziya</li>
+        <li class="list-item">Hema</li>
+        <li class="list-item">Karan</li>
+        <li class="list-item">Sufaid</li>
+        <li class="list-item">Ashi</li>
+        <li class="list-item">Pooja</li>
+        <li class="list-item">Tara</li>
+        <li class="list-item">Avesh</li>
+        <li class="list-item">Kumkum</li>
+        <li class="list-item">Ankita</li>
+      </ul>
+      <p id="noResult">No matching result found.</p>
+    </div>
+  </body>
+  <script>
+    const searchBox = document.getElementById("searchBox");
+    const items = document.querySelectorAll(".list-item");
+    const noResult = document.getElementById("noResult");
+
+    function debounce(fn, delay) {
+      let timer;
+
+      return function (...args) {
+        clearTimeout(timer);
+
+        timer = setTimeout(() => {
+          fn(...args);
+        }, delay);
+      };
+    }
+
+    function searchName() {
+      const value = searchBox.value.toLowerCase();
+      let found = false;
+      items.forEach((item) => {
+        const text = item.textContent.toLowerCase();
+
+        if (text.includes(value)) {
+          item.style.display = "block";
+          found = true;
+        } else {
+          item.style.display = "none";
+        }
+      });
+
+      if (found) {
+        noResult.style.display = "none";
+      } else {
+        noResult.style.display = "block";
+      }
+    }
+    searchBox.addEventListener("input", debounce(searchName, 300));
+  </script>
+</html>

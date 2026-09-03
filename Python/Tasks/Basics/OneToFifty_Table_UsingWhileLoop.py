@@ -1,0 +1,9 @@
+j=1
+i=1
+while j<=50:
+    while i<=10:
+        table=j*i
+        print(f"{j} * {i} = {table}")
+        i+=1 # for current table i increse
+    i=1 # we reset the value of i for next table
+    j+=1 # it change Table 

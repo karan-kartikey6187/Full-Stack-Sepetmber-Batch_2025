@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+
+    <p>Default Count: <span id="defaultCount">0</span></p>
+    <p>Debounce Count: <span id="debounceCount">0</span></p>
+    <p>Throttle Count: <span id="throttleCount">0</span></p>
+    <script>
+        const inputfeildEl = document.getElementById("input")
+        const defaultCountEl = document.getElementById("defaultCount");
+        const debounceCountEl = document.getElementById("debounceCount");
+        const throttleCountEl = document.getElementById("throttleCount");
+        let defaultCount= 0;
+        let debounceCount= 0;
+        let throttleCount= 0;
+        
+        inputfeildEl.addEventListener("input", debounce(function(){
+           debounceCount +=1;
+           debounceCountEl.innerHTML = debounceCount;
+        },300));
+
+
+        inputfeildEl.addEventListener("input", throttle(function(){
+           throttleCount +=1;
+           throttleCountEl.innerHTML = throttleCount;
+        },300));
+
+        inputfeildEl.addEventListener("input", function(){
+           defaultCount +=1;
+           defaultCountEl.innerHTML = defaultCount;
+        },300);
+
+
+        function debounce(fn ,delay){
+            let timer;
+              return function(...args){
+                clearTimeout(timer)
+                timer= setTimeout(()=> {
+                    fn(args)
+                },delay)
+              }
+        }
+
+        function throttle(fn, delay){
+            let lastCall=0;
+            return function(...args){
+                let now = Date.now()
+                if (now - lastCall >= delay){
+                    lastCall=now;
+                    fn(args)
+                }
+                else{
+                    clearTimeout(timer)
+                    timer= setTimeout(()=> {
+                    fn(args)
+                    },delay)
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

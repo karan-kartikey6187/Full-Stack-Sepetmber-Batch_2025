@@ -1,0 +1,17 @@
+.heading {
+    color: purple;
+    background-color: aqua;
+}
+
+.paragraph {
+    color: blue;
+    background-color: aquamarine;
+}
+.link {
+    color: blueviolet;
+}
+
+.tag {
+    color: orange;
+    font-size: 28px
+}

@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+.box{
+   height: 25rem;
+   width: 50rem;
+   background-color: blue;
+   border: 2px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.circle{
+    height: 25rem;
+    width: 25rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: conic-gradient(red 0deg 90deg, transparent 90deg 360deg)
+}

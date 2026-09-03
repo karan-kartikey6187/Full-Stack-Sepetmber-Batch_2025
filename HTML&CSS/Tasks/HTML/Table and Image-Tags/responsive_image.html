@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Responsive image</title>
+</head>
+
+<body>
+    <picture>
+        <source media="(min-width: 992px)" srcset="./assets/laptop.jpg"><!--For Desktop and Laptop-->
+        <source media="(min-width: 576px)" srcset="./assets/tablet.jpg"><!--For Tablet-->
+        <img src="./assets/mobile.jpg" alt="Mobile Image" height="300"><!--For Mobile if width is less than 576px-->
+    </picture>
+</body>
+
+</html>

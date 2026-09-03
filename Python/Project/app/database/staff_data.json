@@ -1,0 +1,110 @@
+[
+    {
+        "id": "da3b935",
+        "name": "navneet",
+        "email": "navneet23@gmail.com",
+        "contact": 4545432323,
+        "experience": 2,
+        "password": "navneet@33",
+        "role": "Staff"
+    },
+    {
+        "id": "90aed15",
+        "name": "Karan",
+        "email": "karan12@gmail.com",
+        "contact": 4343434345,
+        "experience": 2,
+        "password": "karan@12",
+        "role": "Admin"
+    },
+    {
+        "id": "0033ebf",
+        "name": "yogesh",
+        "email": "yogesh43@gmail.com",
+        "contact": 3445768899,
+        "experience": 3,
+        "password": "yogesh@122",
+        "role": "Staff"
+    },
+    {
+        "id": "9a36361",
+        "name": "vivek",
+        "email": "vivek32@gmail.com",
+        "contact": 5643342232,
+        "experience": 2,
+        "password": "vivek@4454",
+        "role": "Staff"
+    },
+    {
+        "id": "8b99ddb",
+        "name": "aman",
+        "email": "aman877@gmail.com",
+        "contact": 5564993433,
+        "experience": 2,
+        "password": "aman%121212",
+        "role": "Staff"
+    },
+    {
+        "id": "1c54a6d",
+        "name": "ajay",
+        "email": "ajay343@gmail.com",
+        "contact": 7676767676,
+        "experience": 2,
+        "password": "ajay@1122",
+        "role": "Staff"
+    },
+    {
+        "id": "8b916ab",
+        "name": "kamal",
+        "email": "kamal32@gmail.com",
+        "contact": 4545454545,
+        "experience": 3,
+        "password": "kamal#222",
+        "role": "Staff"
+    },
+    {
+        "id": "6a53ec7",
+        "name": "Ashish",
+        "email": "ashish211@gmail.com",
+        "contact": 3232323232,
+        "experience": 2,
+        "password": "Ashish@111",
+        "role": "Staff"
+    },
+    {
+        "id": "d99bb47",
+        "name": "vinod",
+        "email": "vinod34@gmail.com",
+        "contact": 4345657656,
+        "experience": 2,
+        "password": "vinod@11",
+        "role": "Staff"
+    },
+    {
+        "id": "2268b19",
+        "name": "Yogesh Kumar",
+        "email": "yogesh33@gmail.com",
+        "contact": 5645343454,
+        "experience": 2,
+        "password": "yogesh@12",
+        "role": "Staff"
+    },
+    {
+        "id": "bde9b4e",
+        "name": "kuldeep",
+        "email": "kuldeep94@gmail.com",
+        "contact": 4565678767,
+        "experience": 3,
+        "password": "Kuldeep@1234",
+        "role": "Staff"
+    },
+    {
+        "id": "64a3b05",
+        "name": "vinod kumar",
+        "email": "vinod23@gmail.com",
+        "contact": 4566873343,
+        "experience": 2,
+        "password": "vinod@23",
+        "role": "Staff"
+    }
+]

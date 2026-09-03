@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let users = [
+        { name: "Karan", age: 21 },
+        { name: "Rahul", age: 17 },
+        { name: "Aman", age: 20 },
+      ];
+
+      let usersNames = users.map((user) => {
+        return user.name;
+      });
+      console.log(usersNames);
+      let finalAge = users.filter((user) => user.age >= 18);
+      console.log(finalAge);
+
+      let ageSum = users.reduce((acc, el) => {
+        //   return acc += el.age
+        return acc + el.age;
+      }, 0);
+
+      console.log(ageSum);
+
+      let products = [
+        { name: "Laptop", price: 50000 },
+        { name: "Mouse", price: 500 },
+        { name: "Keyboard", price: 1500 },
+      ];
+
+      let incresePriceArr = products.map((el) => {
+        el.price += el.price * 0.1;
+        return el;
+      });
+      console.log(incresePriceArr);
+
+      let allUsers = [
+        { first: "Karan", last: "Kartikey" },
+        { first: "Rahul", last: "Sharma" },
+      ];
+
+      let finalNames = allUsers.map((el) => {
+        return el.first + " " + el.last;
+      });
+
+      console.log(finalNames);
+
+      let techProducts = [
+        { name: "Laptop", price: 50000 },
+        { name: "Mouse", price: 500 },
+      ];
+
+      let formatTechProducts = techProducts.map((el) => {
+        return `${el.name} - ₹${el.price}`;
+        // return el.name + " " + "-" + " " + "₹" + el.price;
+      });
+
+      console.log(formatTechProducts);
+
+      let students = [
+        { name: "Karan", marks: 90 },
+        { name: "Rahul", marks: 45 },
+        { name: "Raj", marks: 31},
+        { name: "Himanshu", marks: 33},
+        { name: "Aman", marks: 29},
+      ];
+
+      let finalResult = students.map((el)=>{
+       let result = (el.marks >= 33) ? "Pass" : "Fail"; 
+       return `${el.name} - ${result}`
+      });
+
+      console.log(finalResult)
+    </script>
+  </body>
+</html>

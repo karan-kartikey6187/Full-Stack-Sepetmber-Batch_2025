@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main()
+{
+
+    int num[5];
+    int temp;
+
+    printf("...............Enter 5 Number...............\n");
+
+    for (int i = 0; i < 5; i++)
+    {
+        scanf("%d", &num[i]);
+    }
+
+    for (int i = 0; i < 5; i++)
+    {
+        for (int k = i + 1; k < 5; k++)
+        {
+            if (num[i] > num[k])
+            {
+                temp = num[i];
+                num[i] = num[k];
+                num[k] = temp;
+            }
+        }
+    }
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d ", num[i]);
+    }
+    return 0;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient-backgrounds</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 300px;
+            display: inline-block;
+        }
+
+        .box-1 {
+            background: linear-gradient(to left, red, green);
+        }
+
+        .box-2 {
+            background: linear-gradient(to top, red, green, blue);
+        }
+
+        .box-3 {
+            background: linear-gradient(180deg, red, green);
+        }
+
+        .box-4 {
+            background: linear-gradient(to right, red 30%, green 30% 60%, blue 60%);
+        }
+
+        .box-5 {
+            background: linear-gradient(45deg, red 20%, green 20% 40%, blue 40% 60%, purple 60% 80%, orange 80%);
+        }
+
+        .box-6 {
+            background: radial-gradient(ellipse, red, blue)
+        }
+
+        .box-7 {
+            background: radial-gradient(circle at center, red, blue)
+        }
+
+        .box-8 {
+            background: radial-gradient(circle at top left, red, blue)
+        }
+
+        .box-9 {
+            background: radial-gradient(circle at center top, red, blue)
+        }
+
+        .box-10 {
+            background: radial-gradient(ellipse at left, red, blue)
+        }
+
+        .bg-clip {
+            width: max-content;
+            background: linear-gradient(to right, red, green, blue);
+            color: transparent;
+            background-clip: text;
+            font-size: 50px;
+        }
+
+        .bg-clip-2 {
+            width: max-content;
+            background-image: url(./images/exploring-the-melodies-of-northeastern-bird-calls-vibrant-bird-perched.webp);
+            background-size: contain;
+            color: transparent;
+            background-clip: text;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gradient-backgrounds</h1>
+    <h2>Linear gradients</h2>
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+    <div class="box box-4"></div>
+    <div class="box box-5"></div>
+    <hr>
+    <h2>Radial gradients</h2>
+    <div class="box box-6"></div>
+    <div class="box box-7"></div>
+    <div class="box box-8"></div>
+    <div class="box box-9"></div>
+    <div class="box box-10"></div>
+
+    <h2 class="bg-clip">Background-Clip</h2>
+    <h2 class="bg-clip-2">Background-Clip</h2>
+</body>
+
+</html>

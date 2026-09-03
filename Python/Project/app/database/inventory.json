@@ -1,0 +1,329 @@
+{
+    "inventory": [
+        {
+            "name": "Paneer Tikka",
+            "category": "starters",
+            "available_half_qty": 118
+        },
+        {
+            "name": "Chicken Tikka",
+            "category": "starters",
+            "available_half_qty": 140
+        },
+        {
+            "name": "Hara Bhara Kabab",
+            "category": "starters",
+            "available_half_qty": 100
+        },
+        {
+            "name": "Mutton Seekh Kabab",
+            "category": "starters",
+            "available_half_qty": 278
+        },
+        {
+            "name": "Veg Spring Roll",
+            "category": "starters",
+            "available_half_qty": 150
+        },
+        {
+            "name": "Chicken Wings",
+            "category": "starters",
+            "available_half_qty": 130
+        },
+        {
+            "name": "Corn & Cheese Balls",
+            "category": "starters",
+            "available_half_qty": 110
+        },
+        {
+            "name": "Fish Finger",
+            "category": "starters",
+            "available_half_qty": 90
+        },
+        {
+            "name": "Paneer Pakora",
+            "category": "starters",
+            "available_half_qty": 116
+        },
+        {
+            "name": "Chilli Chicken",
+            "category": "starters",
+            "available_half_qty": 140
+        },
+        {
+            "name": "Aloo Tikki",
+            "category": "starters",
+            "available_half_qty": 300
+        },
+        {
+            "name": "Crispy Corn",
+            "category": "starters",
+            "available_half_qty": 338
+        },
+        {
+            "name": "Butter Paneer Masala",
+            "category": "main_course",
+            "available_half_qty": 154
+        },
+        {
+            "name": "Butter Chicken",
+            "category": "main_course",
+            "available_half_qty": 180
+        },
+        {
+            "name": "Palak Paneer",
+            "category": "main_course",
+            "available_half_qty": 226
+        },
+        {
+            "name": "Chicken Korma",
+            "category": "main_course",
+            "available_half_qty": 150
+        },
+        {
+            "name": "Veg Kolhapuri",
+            "category": "main_course",
+            "available_half_qty": 130
+        },
+        {
+            "name": "Mutton Rogan Josh",
+            "category": "main_course",
+            "available_half_qty": 90
+        },
+        {
+            "name": "Paneer Lababdar",
+            "category": "main_course",
+            "available_half_qty": 140
+        },
+        {
+            "name": "Chicken Chettinad",
+            "category": "main_course",
+            "available_half_qty": 144
+        },
+        {
+            "name": "Dal Makhani",
+            "category": "main_course",
+            "available_half_qty": 200
+        },
+        {
+            "name": "Goan Fish Curry",
+            "category": "main_course",
+            "available_half_qty": 100
+        },
+        {
+            "name": "Mix Veg",
+            "category": "main_course",
+            "available_half_qty": 180
+        },
+        {
+            "name": "Malai Kofta",
+            "category": "main_course",
+            "available_half_qty": 107
+        },
+        {
+            "name": "Egg Curry",
+            "category": "main_course",
+            "available_half_qty": 198
+        },
+        {
+            "name": "Chicken Biryani",
+            "category": "main_course",
+            "available_half_qty": 136
+        },
+        {
+            "name": "Aloo Jeera",
+            "category": "main_course",
+            "available_half_qty": 350
+        },
+        {
+            "name": "Butter Naan",
+            "category": "breads",
+            "available_half_qty": 600
+        },
+        {
+            "name": "Tandoori Roti",
+            "category": "breads",
+            "available_half_qty": 778
+        },
+        {
+            "name": "Garlic Naan",
+            "category": "breads",
+            "available_half_qty": 500
+        },
+        {
+            "name": "Lachha Paratha",
+            "category": "breads",
+            "available_half_qty": 450
+        },
+        {
+            "name": "Missi Roti",
+            "category": "breads",
+            "available_half_qty": 391
+        },
+        {
+            "name": "Roomali Roti",
+            "category": "breads",
+            "available_half_qty": 550
+        },
+        {
+            "name": "Cheese Naan",
+            "category": "breads",
+            "available_half_qty": 340
+        },
+        {
+            "name": "Kulcha",
+            "category": "breads",
+            "available_half_qty": 274
+        },
+        {
+            "name": "Paneer Stuffed Naan",
+            "category": "breads",
+            "available_half_qty": 280
+        },
+        {
+            "name": "Cheese Garlic Naan",
+            "category": "breads",
+            "available_half_qty": 260
+        },
+        {
+            "name": "Cold Drink",
+            "category": "drinks",
+            "available_half_qty": 298
+        },
+        {
+            "name": "Masala Chai",
+            "category": "drinks",
+            "available_half_qty": 396
+        },
+        {
+            "name": "Fresh Lime Soda",
+            "category": "drinks",
+            "available_half_qty": 250
+        },
+        {
+            "name": "Water",
+            "category": "drinks",
+            "available_half_qty": 496
+        },
+        {
+            "name": "Buttermilk",
+            "category": "drinks",
+            "available_half_qty": 216
+        },
+        {
+            "name": "Mango Lassi",
+            "category": "drinks",
+            "available_half_qty": 200
+        },
+        {
+            "name": "Sweet Lassi",
+            "category": "drinks",
+            "available_half_qty": 220
+        },
+        {
+            "name": "Salted Lassi",
+            "category": "drinks",
+            "available_half_qty": 220
+        },
+        {
+            "name": "Coffee",
+            "category": "drinks",
+            "available_half_qty": 260
+        },
+        {
+            "name": "Green Tea",
+            "category": "drinks",
+            "available_half_qty": 174
+        },
+        {
+            "name": "Mixed Fruit Juice",
+            "category": "drinks",
+            "available_half_qty": 154
+        },
+        {
+            "name": "Gulab Jamun",
+            "category": "desserts",
+            "available_half_qty": 177
+        },
+        {
+            "name": "Ice Cream",
+            "category": "desserts",
+            "available_half_qty": 196
+        },
+        {
+            "name": "Rasmalai",
+            "category": "desserts",
+            "available_half_qty": 150
+        },
+        {
+            "name": "Kheer",
+            "category": "desserts",
+            "available_half_qty": 145
+        },
+        {
+            "name": "Jalebi",
+            "category": "desserts",
+            "available_half_qty": 201
+        },
+        {
+            "name": "Chocolate Brownie",
+            "category": "desserts",
+            "available_half_qty": 140
+        },
+        {
+            "name": "Rabri",
+            "category": "desserts",
+            "available_half_qty": 84
+        },
+        {
+            "name": "Falooda",
+            "category": "desserts",
+            "available_half_qty": 170
+        },
+        {
+            "name": "Strawberry Sundae",
+            "category": "desserts",
+            "available_half_qty": 150
+        },
+        {
+            "name": "Mango Pudding",
+            "category": "desserts",
+            "available_half_qty": 157
+        },
+        {
+            "name": "Chai",
+            "category": "drinks",
+            "available_half_qty": 180
+        },
+        {
+            "name": "Stuffed Paneer Rolls",
+            "category": "starters",
+            "available_half_qty": 300
+        },
+        {
+            "name": "Chicken Handi",
+            "category": "main_course",
+            "available_half_qty": 200
+        },
+        {
+            "name": "Plain Roti",
+            "category": "breads",
+            "available_qty": 150
+        },
+        {
+            "name": "Butter Lachha Paratha",
+            "category": "breads",
+            "available_qty": 250
+        },
+        {
+            "name": "Prawns Fry",
+            "category": "starters",
+            "available_half_qty": 230
+        },
+        {
+            "name": "Prawns Tikka",
+            "category": "starters",
+            "available_half_qty": 158
+        }
+    ]
+}

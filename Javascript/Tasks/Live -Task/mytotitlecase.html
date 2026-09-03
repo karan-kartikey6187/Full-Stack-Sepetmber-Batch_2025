@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom TO Title Case</title>
+</head>
+<body>
+    
+</body>
+<script>
+    String.prototype.ToTitleCase = function() {
+        let str = this;
+        let result= [];
+        let strarr= str.split(" ").filter(Boolean);
+        strarr.forEach((word)=>{
+          result.push(word[0].toUpperCase() + word.slice(1).toLowerCase());
+        })
+        return result.join(" ")
+    }
+
+    str= "hEllO MY Name IS KarAN KARTIKey";
+    console.log(str.ToTitleCase()) 
+</script>
+</html>  

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+    <style>
+        .page-heading{
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 50px;
+            color: rgb(245, 9, 9);
+            text-transform: uppercase;
+        }
+        th, td {
+             border: 1px solid rgb(6, 1, 23);
+             padding: 5px 8px;
+         }
+         th{
+            color: rgb(241, 241, 245);
+            background-color: rgb(16, 54, 243);
+         }
+         table {
+            margin: auto;
+         }
+         #fetch-btn {
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 4px 10px;
+            background-color: rgb(12, 23, 234);
+            border: 1px solid rgb(5, 5, 5);
+            color: white;
+            font-size: medium;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="page-heading">USER DATA</h1>
+    </header>
+    <main>
+        <button id="fetch-btn">Fetch Data</button>
+        <table class="Table">
+            <thead class="table-header">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+             <tbody id="table-body">
+
+             </tbody>
+        </table>
+    </main>
+    <script>
+        async function userdata(){
+            try{
+                let data = await fetch("https://fakestoreapi.com/users");
+                let finalData = await data.json()
+                let fetchBtn= document.getElementById('fetch-btn')
+                let tableBody = document.getElementById("table-body");
+                fetchBtn.addEventListener('click', () => {
+                    tableBody.innerHTML = "";
+                    finalData.forEach(user => {
+                        let tr= document.createElement('tr')
+                        tr.innerHTML= tr.innerHTML = `
+                        <td>${user.id}</td>
+                        <td>${user.name.firstname} ${user.name.lastname}</td>
+                        <td>${user.phone}</td>
+                        <td>${user.email}</td>
+                        <td>${user.address.street}, ${user.address.city}</td>
+                        <td>${user.password}</td>
+                    `;
+                        tableBody.appendChild(tr)
+                    });
+                })
+            } 
+            catch(err){
+                console.log(err)
+            }
+        }
+ 
+        userdata()
+    </script>
+</body>
+</html>

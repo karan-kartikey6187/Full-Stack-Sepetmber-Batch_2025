@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swiper Vertical Thumb to First</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+    .swiper {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .mainSwiper {
+      width: 300px;
+      height: 400px;
+    }
+    .thumbSwiper {
+      width: 100px;
+      height: 400px;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+      background: #ddd;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Slider -->
+  <div class="swiper mainSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background:#ff9999;">Slide 1</div>
+      <div class="swiper-slide" style="background:#99ff99;">Slide 2</div>
+      <div class="swiper-slide" style="background:#9999ff;">Slide 3</div>
+      <div class="swiper-slide" style="background:#ffff99;">Slide 4</div>
+    </div>
+  </div>
+
+  <!-- Thumbnail Slider -->
+  <div class="swiper thumbSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background:#ff9999;">Thumb 1</div>
+      <div class="swiper-slide" style="background:#99ff99;">Thumb 2</div>
+      <div class="swiper-slide" style="background:#9999ff;">Thumb 3</div>
+      <div class="swiper-slide" style="background:#ffff99;">Thumb 4</div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // Thumbnail Swiper (Vertical)
+    const thumbSwiper = new Swiper('.thumbSwiper', {
+      direction: 'vertical',
+      slidesPerView: 4,
+      spaceBetween: 10,
+    });
+
+    // Main Swiper (Vertical)
+    const mainSwiper = new Swiper('.mainSwiper', {
+      direction: 'vertical',
+      slidesPerView: 1,
+    });
+
+    // Thumbnail click → Slide ko first position par lana
+    thumbSwiper.slides.forEach((slide, index) => {
+      slide.addEventListener('click', () => {
+        const clickedSlide = mainSwiper.slides[index].cloneNode(true);
+        mainSwiper.removeSlide(index);
+        mainSwiper.prependSlide(clickedSlide);
+        mainSwiper.slideTo(0, 0); // instantly first slide par le jao
+      });
+    });
+  </script>
+</body>
+</html>

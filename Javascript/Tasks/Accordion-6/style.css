@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.accordion {
+    width: 25%;
+}
+
+.accordion-item {
+    margin-bottom: 5px;
+}
+
+.accordion-header {
+    background-color: blue;
+    color: aliceblue;
+    padding-inline: 10px;
+    padding-block: 8px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-header span{
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.accordion-content{
+   background-color: aqua;
+   padding-inline: 5px;
+   padding-block: 8px;
+   display: none;
+}
+
+.accordion-content.active{
+    display: block;
+}

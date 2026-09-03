@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --border-1px: 1px;
+    --border-3px: 3px;
+    --border-radius-8px: 8px;
+    --color-white:white;
+    --d-flex: flex;
+    --d-grid: grid;
+}
+
+body {
+    font-family: Inter;
+}
+
+.h-40px {
+    height: 40px;
+}
+
+.grid-container-1 {
+    width: 40vw;
+    display: var(--d-grid);
+    grid-template-columns: repeat(3, 1fr);
+    border: var(--border-1px) solid rgba(53, 53, 191, 0.792);
+    padding: 10px;
+    gap: 20px;
+}
+
+.grid-container-1 .grid-item {
+    display: var(--d-grid);
+    border: var(--border-1px) solid black;
+    background-color: rgb(78, 116, 153);
+    border-radius: 7px;
+    justify-content: start;
+    align-items: center;
+    color: var(--color-white);
+    padding-left: 10px;
+}
+
+.grid-container-2 {
+    width: 30vw;
+    height: 34vh;
+    display: var(--d-grid);
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: var(--border-1px) solid rgba(53, 53, 191, 0.792);
+    padding: 5px;
+    gap: 20px;
+}
+
+.grid-container-2 .grid-item {
+    color: var(--color-white);
+    font-size: 12px;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+.grid-container-2 .grid-item:first-child {
+    grid-column: 1/ span 5;
+    grid-row: 1/ span 2;
+    background-color: rgb(129, 148, 156);
+    border: var(--border-3px) solid rgb(88, 95, 98);
+    border-radius: var(--border-radius-8px);
+}
+
+.grid-container-2 .grid-item:last-child {
+    grid-column: 3/ span 5;
+    grid-row: 2/ span 2;
+    background-color: rgba(227, 191, 198, 80%);
+    border: var(--border-3px) solid rgb(244, 164, 180);
+    border-radius: var(--border-radius-8px);
+}
+
+
+.grid-container-3 {
+    width: 40vw;
+    height: 25vh;
+    display: var(--d-grid);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 40px);
+    grid-template-areas: "one one one"
+        "two three three"
+        ". four four";
+    border: var(--border-1px) solid rgba(53, 53, 191, 0.792);
+    padding: 10px;
+    gap: 15px;
+}
+
+.grid-container-3 .grid-item {
+    display: var(--d-grid);
+    border: var(--border-1px) solid rgb(56, 60, 179);
+    background-color: rgb(78, 116, 153);
+    border-radius: 7px;
+    justify-content: start;
+    align-items: center;
+    color: var(--color-white);
+    padding-left: 10px;
+}
+
+.grid-container-3 .grid-item:nth-child(1) {
+    grid-area: one;
+}
+
+.grid-container-3 .grid-item:nth-child(2) {
+    grid-area: two;
+}
+
+.grid-container-3 .grid-item:nth-child(3) {
+    grid-area: three;
+}
+
+.grid-container-3 .grid-item:nth-child(4) {
+    grid-area: four;
+}
+
+.grid-container-4 {
+    width: 40vw;
+    height: auto;
+    display: var(--d-grid);
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.grid-container-4 .flex-item{
+    display: var(--d-flex);
+    background-color: rgb(143, 143, 143);
+    color: var(--color-white);
+    justify-content: center;
+    font-size: 13px;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.flex-container {
+    display: var(--d-flex);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.grid-item img{
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+
+.flex-1 .flex-item:nth-child(1){
+    width: 70px;
+}
+.flex-1 .flex-item:nth-child(2){
+    width: 40px;
+}
+.flex-1 .flex-item:nth-child(3){
+    width: 40px;
+}
+.flex-1 .flex-item:nth-child(4){
+    width: 50px;
+}
+.flex-1 .flex-item:nth-child(5){
+    width: 110px;
+}
+
+.flex-2 .flex-item:nth-child(1){
+    width: 75px;
+}
+.flex-2 .flex-item:nth-child(2){
+    width: 75px;
+}
+.flex-2 .flex-item:nth-child(3){
+    width: 55px;
+}
+.flex-2 .flex-item:nth-child(4){
+    width: 95px;
+}
+.flex-3 .flex-item:nth-child(1){
+    width: 75px;
+}
+.flex-3 .flex-item:nth-child(2){
+    width: 75px;
+}
+.flex-3 .flex-item:nth-child(3){
+    width: 65px;
+}
+.flex-3 .flex-item:nth-child(4){
+    width: 55px;
+}
+
+.flex-4 .flex-item:nth-child(1){
+    width: 70px;
+}
+.flex-4 .flex-item:nth-child(2){
+    width: 40px;
+}
+.flex-4 .flex-item:nth-child(3){
+    width: 40px;
+}
+.flex-4 .flex-item:nth-child(4){
+    width: 70px;
+}
+.flex-4 .flex-item:nth-child(5){
+    width: 50px;
+}

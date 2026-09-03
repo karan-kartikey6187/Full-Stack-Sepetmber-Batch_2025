@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+.flag-wrapper{
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+.flag{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flag .flag-main{
+  width: 18.75rem;
+  height: 11.25rem;
+  border: 1px solid black;
+  position: relative;
+  top: 200px;
+}
+
+.saffron{
+  height: 33.33%;
+  width: 100%;
+  background: orange;
+}
+
+.white{
+  height: 33.33%;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green{
+  height: 33.33%;
+  width: 100%;
+  background: green;
+}
+
+.chakra img{
+  margin-top: 5px;
+  height: 100%;
+  width: 3.75rem;
+}
+
+.pole{
+    height:25.75rem;
+    width: 1.25rem;
+    background-color: bisque;
+}
+
+
+.cone{
+  height: 0px;
+  width: 0pc;
+  border-bottom:  2.5rem solid rgb(203, 126, 10);
+  border-left: .68rem solid transparent;
+  border-right: .68rem solid transparent;
+}
+
+.base-color{
+    background-color: lightpink;
+    border: 1px solid violet;
+}
+
+.flag-base .base:nth-child(1){
+  height: 33.3%;
+  width: 3.5rem;
+}
+.flag-base .base:nth-child(2){
+  height: 33.3%;
+  width: 4.6rem;
+}
+.flag-base .base:nth-child(3){
+  height: 33.3%;
+  width: 5.7rem;
+}
+
+.flag-base {
+  width: 12.5rem;
+  height: 3.75rem;
+}
+
+.flag-base{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

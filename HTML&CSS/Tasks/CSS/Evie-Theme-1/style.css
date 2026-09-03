@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+
+    text-align: center;
+    margin-inline: auto;
+    max-width: 47rem;
+}
+
+.header {
+    background: linear-gradient(to left, rgb(82, 76, 252, 96%), rgb(101, 93, 245, 96%)), url(./assets/images/evie_default_bg.jpeg);
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.download-button {
+    background-color: rgb(6, 209, 155);
+    border-radius: 1.2rem;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: white;
+    font-size: .9rem;
+    font-weight: 200;
+}
+
+main h2, main p{
+     font-weight: 500;
+}
+
+main p{
+    color: rgb(135, 133, 133);
+}
+
+strong {
+    font-weight: 500;
+}
+body {
+    font-family: Open Sans;
+}
+
+.banner {
+    padding-top: 14rem;
+    height: 26rem;
+    width: 47rem;
+}
+.banner .content{
+    padding: 2px;
+} 
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: .8rem;
+    font-weight: 200;
+    line-height: 2;
+    margin-bottom: 2rem;
+    padding-inline: 7rem;
+}
+
+main p{
+    padding-inline: 3rem;
+}
+
+.user-card p{
+    padding-inline: 14rem;
+}
+.evie-user {
+    background-color: #f7f7f7;
+    padding: .9rem;
+    margin-top: .9rem;
+    height: 70rem;
+}
+
+img {
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+.natural-styling {
+    background-color: white;
+    height: 100vh;
+    padding-top: 5rem;
+}
+
+.styling {
+    width: 36rem;
+    margin-left: 6rem;
+}
+.styling p{
+    font-size: .9rem;
+}
+
+.styling >img{
+    width: 55%;
+    aspect-ratio: 1/1;
+}
+
+.framework-agnostic {
+    background-color: #f7f7f7;
+    height: 95vh;
+    padding-top: 6rem;
+}
+
+.agnostic {
+    width: 35rem;
+    margin-left: 6rem;
+}
+.rapid-prototyping {
+    background-color: white;
+    height: 95vh;
+    padding-top: 6rem;
+}
+
+.prototyping {
+    width: 35rem;
+    margin-left: 6rem;
+}
+
+.footer {
+    background: linear-gradient(to right, rgb(82, 76, 252, 96%), rgb(101, 93, 245, 96%));
+    height: 45vh;
+    padding-top: 6rem;
+}
+
+.footer h2 , .footer p {
+    color: white;
+}
+
+.footer h2 {
+    font-weight: 400;
+}
+
+.users-cards img{
+    width: 30%;
+    aspect-ratio: 4/3;
+}
+
+.users-cards {
+    margin: 4rem;
+}

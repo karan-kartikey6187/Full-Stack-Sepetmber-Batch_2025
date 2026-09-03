@@ -1,0 +1,15 @@
+.section-1 h1 , .paragraph p , .paragraph span {
+    color: coral;
+}
+
+.section-2 * , #link a {
+    color: blueviolet;
+}
+
+.section-1 h2 , .section-1 h3 {
+    color: magenta;
+}
+
+.button * , .python-code{
+    color: purple;
+}
