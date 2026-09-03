@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fiama Floral Shop</title>
+    <meta
+      name="description"
+      content="Fiama Floral Shop provides fresh flowers"/>
+    <meta name="keywords"
+      content="Fiama Floral Shop, Fresh Flower, Shop Your Flower, Natural & Beautiful Flower Here, Premium Flowers"/>
+    <meta name="robots" content="noindex nofollow" />
+    <meta property="og:title" content="Fiama Floral Shop" />
+    <meta property="og:description"
+      content="Fiama Floral Shop provides fresh flowers"/>
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fiama Floral Shop" />
+    <meta
+      name="twitter:description"
+      content="Fiama Floral Shop provides fresh flowers"/>
+    <meta name="twitter:image" content="" />
+    <link rel="icon" href="./assets/icons/fevicon.ico" type="image/ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <section class="home-header pb-4 border-bottom">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg bg-transparent mt-6">
+            <div class="container-fluid flex-column flex-sm-row">
+              <a class="navbar-brand" href="#"><img src="./assets/logos/fiama-logo.webp" alt="Brand Logo"/></a>
+              <div class="d-flex align-items-center order-lg-3 mt-3 mt-sm-0">
+                <div type="button" class="wishlist-toggler-btn position-relative d-flex align-items-center me-4">
+                    <img src="./assets/icons/heart.svg" alt="Cart" class="icon-20px"/>
+                  <span class="position-absolute top-0 badge-icon translate-middle badge rounded-circle bg-primary d-flex justify-content-center align-items-center">4</span>
+                </div>
+                <div type="button" class="cart-toggler-btn position-relative d-flex align-items-center me-1">
+                    <img src="./assets/icons/cart.svg" alt="Cart" class="icon-20px"/>
+                  <span class="position-absolute top-0 badge-icon translate-middle badge rounded-circle bg-primary d-flex justify-content-center align-items-center">2</span>
+                </div>
+                <button class="cart-toggler-btn d-flex flex-column ms-2 position-relative border-0 bg-transparent align-items-start">
+                  <a href="javascript:void(0)" class="mb-0 fs-13 fw-medium text-light-grey text-decoration-none stretched-link text-nowrap">YOUR CART</a>
+                  <p class="mb-0 fs-13 fw-medium text-primary" style="margin-top: 4px">$89.25</p>
+                </button>
+                <button class="navbar-toggler border-0 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="cart-overlay position-fixed"></div>
+                <div class="cart-offcanvas position-fixed border pt-3 pe-1 pb-3 ps-5">
+                  <div class="pe-2">
+                    <div class="d-flex justify-content-between align-items-center pb-5 mb-4 border-bottom mt-2">
+                      <h2 class="fw-medium display-4 text-uppercase mb-0">CART</h2>
+                      <button class="border-0 bg-transparent"><img src="./assets/icons/remove-x-icon.svg" alt="" class="off-canvas-remove-btn-cart"></button>
+                    </div>
+                    <div class="cart-scroll-bar overflow-y-auto overflow-x-visible mb-6" style="height: 350px;">
+                      <div class="cart-card-wrapper-offcanvas">
+                          <div class="cart-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 mb-3">
+                            <span class="position-absolute delete-badge-cart badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-1.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                              <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Premium Joyful</p>
+                              <p class="mb-0 fs-14 fw-normal text-light-grey">1&nbsp;x&nbsp;$65.00</p>
+                            </div>
+                          </div>
+                          <div class="cart-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 mb-3 border-top">
+                            <span class="position-absolute delete-badge-cart badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-2.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                              <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">The White Rose</p>
+                              <p class="mb-0 fs-14 fw-normal text-light-grey">1&nbsp;x&nbsp;$85.00</p>
+                            </div>
+                          </div>
+                          <div class="cart-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 mb-3 border-top">
+                            <span class="position-absolute delete-badge-cart badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-3.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                              <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Red Rose Bouquet</p>
+                              <p class="mb-0 fs-14 fw-normal text-light-grey">1&nbsp;x&nbsp;$92.00</p>
+                            </div>
+                          </div>
+                          <div class="cart-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 border-top">
+                            <span class="position-absolute delete-badge-cart badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-4.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                              <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Pink Flower Tree</p>
+                              <p class="mb-0 fs-14 fw-normal text-light-grey">1&nbsp;x&nbsp;$86.00</p>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div>
+                       <div class="d-flex py-2 justify-content-between border-top border-bottom">
+                        <p class="display-4 mb-0 fw-medium">Subtotal:</p>
+                        <p class="display-4 mb-0 fw-medium text-primary">$310.00</p>
+                       </div>
+                       <div class="pt-4 pb-3 d-flex justify-content-between">
+                         <a href="./cart.html" class="proceed-btn btn  rounded-0 checkout-btn fs-13 fw-medium text-center py-2 px-3">
+                           VIEW CART
+                         </a>
+                         <a href="./cart.html" class="apply-coupon-btn btn rounded-0 bg-light-grey-800 text-nowrap fs-13 px-3 py-2 fw-medium" type="button">
+                            CHECKOUT
+                        </a>
+                      </div>
+                      <p class="fs-14 fw-normal text-black mb-0">Free Shipping on All Orders Over $100!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="wishlist-overlay position-fixed"></div>
+                <div class="wishlist-offcanvas position-fixed border pt-3 pe-1 pb-3 ps-5">
+                  <div class="pe-2">
+                    <div class="d-flex justify-content-between align-items-center pb-5 mb-4 border-bottom mt-2">
+                      <h2 class="fw-medium display-4 text-uppercase mb-0">Wishlist</h2>
+                      <button class="border-0 bg-transparent"><img src="./assets/icons/remove-x-icon.svg" alt="" class="off-canvas-remove-btn-wishlist"></button>
+                    </div>
+                    <div class="wishlist-scroll-bar overflow-y-auto overflow-x-visible mb-6" style="height: 350px;">
+                      <div class="wishlist-card-wrapper-offcanvas">
+                          <div class="wishlist-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 mb-3">
+                            <span class="position-absolute delete-badge-wishlist badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-6.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                                <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Assorted Roses</p>
+                                <p class="mb-0 fs-14 fw-normal text-light-grey">$125.00</p>
+                                <p class="mb-0 fs-14 fw-semibold text-black mt-6">In Stock</p>
+                            </div>
+                          </div>
+                          <div class="wishlist-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 mb-3 border-top">
+                            <span class="position-absolute delete-badge-wishlist badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-8.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                                <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Tropical Peace Lily</p>
+                                <p class="mb-0 fs-14 fw-normal text-light-grey">$90.00</p>
+                                <p class="mb-0 fs-14 fw-semibold text-black mt-6">In Stock</p>
+                            </div>
+                          </div>
+                          <div class="wishlist-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 mb-3 border-top">
+                            <span class="position-absolute delete-badge-wishlist badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-5.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                                <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Heart's Desire</p>
+                                <p class="mb-0 fs-14 fw-normal text-light-grey">$139.00</p>
+                                <p class="mb-0 fs-14 fw-semibold text-black mt-6">In Stock</p>
+                            </div>
+                          </div>
+                          <div class="wishlist-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 border-top">
+                            <span class="position-absolute delete-badge-wishlist badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-7.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                                <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Roses Surprise</p>
+                                <p class="mb-0 fs-14 fw-normal text-light-grey">$110.00</p>
+                                <p class="mb-0 fs-14 fw-semibold text-black mt-6">In Stock</p>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div>
+                       <div class="pt-4 pb-3 d-flex justify-content-between border-top">
+                         <a href="./wishlist.html" class="proceed-btn btn  rounded-0 checkout-btn fs-13 fw-medium text-center py-2 px-3">
+                           VIEW WISHLIST
+                         </a>
+                         <a href="./cart.html" class="apply-coupon-btn btn rounded-0 bg-light-grey-800 text-nowrap fs-13 px-3 py-2 fw-medium" type="button">
+                            VIEW CART
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offcanvas-wrapper offcanvas offcanvas-start px-3 " tabindex="-1" id="mobileMenu">
+                <div class="offcanvas-header px-0 mx-3 border-bottom mb-1 pb-4">
+                  <h5 class="offcanvas-title"><a class="navbar-brand" href="#"><img src="./assets/logos/fiama-logo.webp" alt="Brand Logo"/></a></h5>
+                  <button type="button" class="btn-close ms-auto  mt-1" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body justify-content-center px-3 pb-6 pb-lg-0">
+                  <div class="d-flex gap-4 justify-content-center px-0 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center d-none d-lg-flex">
+                      <img src="./assets/icons/telephone.svg" alt="Phone" class="icon-20px me-3"/>
+                      <div>
+                        <p class="mb-0 text-light-grey fs-13 fw-medium mb-4px">PHONE</p>
+                        <p class="mb-0"><a href="tel:0123456789" class="text-decoration-none text-black fs-13 fw-normal nav-link text-nowrap">+0123-456-789</a></p>
+                      </div>
+                    </div>
+                    <div class="search-bar p-1 border border-1 d-none d-lg-flex d-flex align-items-center rounded rounded-5">
+                      <form class="d-flex border-0 w-100" role="search">
+                        <input class="form-control me-2 border-0 fw-normal" type="search" placeholder="Search here..."/>
+                        <button class="border-0 bg-transparent" type="submit">
+                          <img src="./assets/icons/search.svg" alt="Search" />
+                        </button>
+                      </form>
+                    </div>
+                    <div class="search-bar-offcanvas p-1 d-lg-none d-flex align-items-center rounded rounded-1 bg-body-tertiary">
+                      <form class="d-flex border-0 w-100 justify-content-center" role="search">
+                        <input class="form-control me-2 border-0 bg-body-tertiary fw-normal" type="search" placeholder="Search here..."/>
+                        <button class="border-0 bg-transparent" type="submit">
+                          <img src="./assets/icons/search.svg" alt="Search" />
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="accordion d-lg-none  mt-3 pb-4 border-bottom" id="accordionExample">
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fw-normal ps-0 nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          HOME
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ps-0">
+                          <ul class="d-flex flex-column gap-3 ps-1 pe-1">
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="index.html">Home Style - 01</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Home Style - 02</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Home Style - 03</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Home Style - 04</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="d-block pe-3 py-2 text-decoration-none text-light-grey fw-normal nav-link">ABOUT US</a>
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fw-normal ps-0 nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                         SHOP
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ps-0">
+                          <ul class="d-flex flex-column gap-3 ps-1 pe-1">
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./shop.html">Shop</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop Grid</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop Left sidebar</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop right sidebar</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop details</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./cart.html">Cart</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./wishlist.html">Wishlist</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./checkout.html">Checkout</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./account.html">My Account</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./login.html">Sign in</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./register.html">Register</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed fw-normal ps-0 nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          NEWS
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ps-0">
+                          <ul class="d-flex flex-column gap-3 ps-1 pe-1">
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Grid</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Left sidebar</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Right sidebar</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News details</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed fw-normal ps-0 nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          PAGES
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ps-0">
+                          <ul class="d-flex flex-column gap-3 ps-1 pe-1">
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">About Us</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio - 02</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio Details</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">FAQ</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Google Map Locations</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">404</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Contact</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Coming Soon</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="d-block pe-3 py-2 text-decoration-none text-light-grey fw-normal nav-link">CONTACT</a>
+                  </div>
+                  <div class="pb-3 border-bottom mb-5 d-lg-none">
+                    <div class="icon-box d-flex align-items-center mt-2 position-relative">
+                      <div class="icon-50px border d-flex justify-content-center align-items-center me-1"><img src="./assets/icons/person.svg" class="icon-link" alt=""></div>
+                       <a href="./account.html" class="mb-0 text-light-grey fw-normal stretched-link nav-link">My Account</a>
+                    </div>
+                    <div class="icon-box d-flex align-items-center mt-2 position-relative">
+                      <div class="icon-50px border d-flex justify-content-center align-items-center me-1"><img src="./assets/icons/heart.svg" class="icon-link" alt="">&thinsp;<sup class="text-light-grey fw-normal">3</sup></div>
+                       <a href="./wishlist.html" class="mb-0 text-light-grey fw-normal stretched-link nav-link">Wishlist</a>
+                    </div>
+                    <div class="icon-box d-flex align-items-center mt-2 position-relative">
+                      <div class="icon-50px border d-flex justify-content-center align-items-center me-1"><img src="./assets/icons/cart.svg" class="icon-link" alt="">&thinsp;<sup class="text-light-grey fw-normal">5</sup></div>
+                       <a href="./cart.html" class="mb-0 text-light-grey fw-normal stretched-link nav-link">Shoping Cart</a>
+                    </div>
+                  </div>
+                  <div class="d-flex d-lg-none gap-1">
+                    <div class="icon-40px d-flex justify-content-center align-items-center bg-body-tertiary"><img src="./assets/icons/facebook-grey.svg" alt=""></div>
+                    <div class="icon-40px d-flex justify-content-center align-items-center bg-body-tertiary"><img src="./assets/icons/twitter-grey.svg" alt=""></div>
+                    <div class="icon-40px d-flex justify-content-center align-items-center bg-body-tertiary"><img src="./assets/icons/pinterest-grey.svg" alt=""></div>
+                    <div class="icon-40px d-flex justify-content-center align-items-center bg-body-tertiary"><img src="./assets/icons/instagram-grey.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="custom-nav bg-white pt-4 position-relative d-none d-lg-block">
+          <div class="nav-wrapper container d-flex justify-content-center" id="nav-items">
+            <nav class="header-links">
+              <ul class="nav nav-underline d-flex gap-6 pb-2">
+                <li class="nav-item">
+                  <a class="nav-link header-nav-links text-light-grey fw-medium" aria-current="page" href="#">HOME</a>
+                  <ul class="z-3 d-flex flex-column gap-1 position-absolute bg-white start-25 top-100 border-danger border-top border-2 pt-4 ps-6 pe-7 pb-5 shadow d-none">
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="index.html">Home Style - 01</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Home Style - 02</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Home Style - 03</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Home Style - 04</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-links text-light-grey fw-medium" href="#">PAGES</a>
+                  <ul class="z-3 position-absolute bg-white start-10 top-100 border-danger border-top border-2 pt-4 ps-6 pe-5 pb-5 shadow d-flex gap-4 d-none">
+                      <div class="d-flex flex-column gap-1">
+                        <div class="text-light-grey fw-medium ps-2 pe-7 py-2 bg-body-secondary">Inner Pages</div>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">About Us</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio-2</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio Details</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">FAQ</a></li>
+                      </div>
+                      <div class="d-flex flex-column gap-1">
+                        <div class="text-light-grey fw-medium ps-2 pe-7 py-2 bg-body-secondary">Inner Pages</div>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Google Map Locations</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">404</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Contact</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Coming Soon</a></li>
+                      </div>
+                      <div class="d-flex flex-column gap-1">
+                        <div class="text-light-grey fw-medium ps-2 pe-7 py-2 bg-body-secondary">Shop Pages</div>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./shop.html">Shop</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop Grid</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop Left sidebar</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop right sidebar</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop details</a></li>
+                      </div>
+                      <div class="d-flex flex-column gap-1">
+                        <div class="text-light-grey fw-medium ps-2 pe-7 py-2 bg-body-secondary">Blog Pages</div>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Grid</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Left sidebar</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Right sidebars</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News details</a></li>
+                      </div>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-links text-light-grey fw-medium" href="#">SHOP</a>
+                  <ul class="nav-shop-options-list z-3 d-flex flex-column gap-1 position-absolute bg-white start-25 top-100 border-danger border-top border-2 pt-4 ps-6 pe-7 pb-5 shadow d-none overflow-x-auto" style="height: 300px;">
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./shop.html">Shop</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop Grid</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop Left sidebar</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop right sidebar</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop details</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Order Tracking</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./cart.html">Checkout</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./wishlist.html">Wishlist</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./checkout.html">Checkout</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./account.html">My Account</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./login.html">Sign in</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./register.html">Register</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-links text-light-grey fw-medium" href="#">PORTFOLIO</a>
+                  <ul class="z-3 d-flex flex-column gap-1 position-absolute bg-white start-25 top-100 border-danger border-top border-2 pt-4 ps-6 pe-7 pb-5 shadow d-none">
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio - 02</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio Details</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-links text-light-grey fw-medium" href="#">NEWS</a>
+                  <ul class="z-3 d-flex flex-column gap-1 position-absolute bg-white start-25 top-100 border-danger border-top border-2 pt-4 ps-6 pe-7 pb-5 shadow d-none">
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Grid</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Left sidebar</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Right sidebar</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News details</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-links text-light-grey fw-medium" href="#">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="breadcrumb-section bg-light-grey">
+        <div class="container py-6 d-flex justify-content-start align-items-center flex-column">
+            <h1 class="fs-32 fw-bolder lh-sm">Checkout</h1>
+            <nav aria-label="breadcrumb" class="">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item d-flex justify-content-center align-items-start"><a href="./index.html" class="text-decoration-none text-reset nav-link fs-14 fw-medium text-dark">Home</a></li>
+                <li class="breadcrumb-item active fs-14 fw-medium text-dark" aria-current="page">Checkout</li>
+            </ol>
+            </nav>
+        </div>
+      </section>
+      <section class="billing-details">
+         <div class="container">
+          <div class="px-5 py-3 bg-light-grey mt-7 mb-0 w-100"><h2 class="display-4 fw-medium">Returning customer? <span  id="loginToggleBtn" role="button" class="text-primary">Click here to login</span></h2></div>
+          <div id="loginDropdown" class="mt-1 d-none">
+            <div class="border px-4 pt-4 pb-6">
+              <p class="mb-0 mt-3 fw-light mb-4">Please login your accont.</p>
+              <form action="#" id="loginForm" class="row" novalidate>
+                <div class="mb-4 loging-name-box position-relative col-12 col-md-6">
+                    <input minlength="3" required type="text" id="name" name="name" placeholder="Enter your name" class="w-100 bg-light-grey py-2 border-0 p-3 display-4 fw-light">
+                </div>
+                <div class="mb-4 loging-email-box position-relative col-12 col-md-6">
+                    <input required type="email" id="mail" name="email" placeholder="Enter email address" class="w-100 bg-light-grey py-2 border-0 p-3 display-4 fw-light">
+                </div>
+                <div class="mb-2 d-flex align-items-center gap-1 flex-wrap">
+                    <input type="submit" name="contactSubmit" value="SUBMIT"  class="proceed-btn btn rounded-0 checkout-btn fw-medium text-center px-6 py-2"></input>
+                    <div class="d-flex align-items-center">
+                      <input class="form-check-input d-inline-block" type="checkbox" value="" id="checkDefault" style="width: 15px; margin-right: 5px;">
+                      <label class="form-check-label ms-0 d-inline display-4 fw-normal text-nowrap mb-0" for="checkDefault">
+                         Remember me
+                      </label>
+                    </div>
+                  </div>
+              </form>
+              <p class="mb-0 mt-3 fw-normal nav-link">Lost your password?</p>
+            </div>
+          </div>
+          <div class="px-5 py-3 bg-light-grey mt-4 mb-1 w-100"><h2 class="display-4 fw-medium">Have a coupon? <span id="loginCouponToggleBtn" class="text-primary">Click here to enter your code</span></h2></div>
+         <div id="loginCouponDropdown" class="mt-1 d-none">
+          <div class="border px-4 pt-4 pb-6 mb-3">
+            <p class="mb-0 mt-3 fw-light mb-4">If you have a coupon code, please apply it below.</p>
+            <input type="email" class="checkOutCouponBtn form-control fs-13 text-black fw-normal rounded-0 border-0 bg-light-grey px-3 py-2" placeholder="Coupon Code" id="applyCouponLogin">
+            <div class="apply-coupon-btn btn rounded-0 bg-light-grey-800 px-6 py-2 mt-4 fw-medium text-uppercase" type="button">
+                Apply Coupon
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="billing-details mt-6">
+        <div class="container">
+          <h2 class="display-2 fw-medium pb-1 w-50 mb-5 border-bottom d-inline-block">Billing Details</h2>
+          <form action="#" id="billingForm" novalidate class="">
+            <div class="p-5 border">
+              <div class="row billingFormWrapper">
+                <div class="mb-6 fname-box position-relative col-12 col-md-6">
+                    <input minlength="3"  required type="text"id="firstName" name="firstName" placeholder="First name" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light">
+                </div>
+                <div class="mb-6 lname-box position-relative col-12 col-md-6">
+                    <input minlength="3" required type="text" id="lastName" name="lastName" placeholder="Last name" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
+                </div>
+                <div class="mb-6 email-box2 position-relative col-12 col-md-6">
+                    <input required type="email" id="billingMail" name="email" placeholder="email address" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
+                </div>
+                <div class="mb-6 phone-box position-relative col-12 col-md-6">
+                    <input required type="text" id="billingPhone" name="phone" placeholder="phone number" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
+                </div>
+                <div class="mb-6 company-box position-relative col-12 col-md-6">
+                    <input type="text" id="companyName" name="company" placeholder="Company name (optional)" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
+                </div>
+                <div class="mb-6 address-box position-relative col-12 col-md-6">
+                    <input type="text" id="companyAddress" name="address" placeholder="Company address (optional)" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
+                </div>
+                <div class="mb-6 col-12 col-md-6">
+                    <label class="display-4 fw-medium mb-3 d-block">
+                        Country
+                    </label>
+                    <div class="country-box position-relative" style="max-width: 300px;">
+                        <select id="billingCountry" required class="w-100 bg-white border p-3 display-4 fw-medium">
+                            <option value="">Select Country</option>
+                            <option value="india">Australia</option>
+                            <option value="usa">Canada</option>
+                            <option value="uk">China</option>
+                            <option value="canada">Morocco</option>
+                            <option value="australia">Saudi Arabia</option>
+                            <option value="germany">United Kingdom (UK)</option>
+                            <option value="france">United States (US)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-6"></div>
+                <div class="row">
+                  <label class="display-4 fw-medium mb-3 d-block">
+                        Address
+                    </label>
+                  <div class="mb-6 col-12 col-md-6">
+                                     
+                      <input type="text"id="streetAddress"placeholder="House number and street name"class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light">
+                  </div>
+                  <div class="mb-6 col-12 col-md-6">
+                      <input  type="text" id="apartmentAddress" placeholder="Apartment, suite, unit etc. (optional)" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
+                  </div>
+                </div>
+                <div class="mb-6 col-12 col-md-6 col-lg-4">
+                    <label class="display-4 fw-medium mb-3 d-block">
+                        Town / City
+                    </label>
+                    <input  type="text" id="cityName" placeholder="City" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
+                </div>
+                <div class="mb-6 col-12 col-md-6 col-lg-4">
+                    <label class="display-4 fw-medium mb-3 d-block">
+                        State
+                    </label>
+                    <input  type="text" id="stateName" placeholder="State" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
+                </div>
+                <div class="mb-6 col-12 col-md-6 col-lg-4">
+                    <label class="display-4 fw-medium mb-3 d-block">
+                        Zip
+                    </label>
+                    <input  type="text" id="zipCode" placeholder="Zip" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
+                </div>
+                <div class="d-none d-md-block col-md-6 d-lg-none"></div>
+                <div class="mb-6 col-12">
+                    <input  class="form-check-input d-inline-block" type="checkbox" id="createAccount" style="width: 15px;" >
+                    <label  class="form-check-label ms-1 d-inline display-4 fw-normal" for="createAccount">
+                        Create an account?
+                    </label>
+                </div>
+                <div class="mb-6 col-12">
+                    <label class="display-4 fw-medium mb-3 d-block">
+                        Order Notes (optional)
+                    </label>
+                    <div class="position-relative notes-box">
+                        <textarea  rows="8" id="orderNotes" placeholder="Notes about your order, e.g. special notes for delivery." class="w-100 bg-light-grey border-0 p-3 display-4 fw-medium"></textarea>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-6 pt-5 mb-6">
+              <div class="payment-method col-12 col-lg-6">
+                <div class="w-75 border-bottom mb-3">
+                  <h2 class="display-2 fw-medium">Payment Method</h2>
+                </div>
+                <div>
+                  <div class="form-check d-flex align-items-center px-4 justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                      <label class="form-check-label mb-0 ms-1" for="radioDefault2">  
+                          Credit & Debit cards
+                      </label>
+                    </div>
+                    <img src="./assets/icons/atm-card.webp" alt="" style="height: 40px; width: 40px;">
+                  </div>
+                </div>
+                <div class="payment-feilds shadow px-2 py-4 mt-2">
+                  <div class="d-flex flex-column align-items-start mt-3 mb-4">
+                    <label for="name" class="text-uppercase mb-1">Cardholder Name</label>
+                    <input minlength="3" required type="text" id="name" name="name" placeholder="Full name on card" class="w-100 rounded-0 py-1 px-1 border-0 bg-light-grey">
+                  </div>
+                  <div class="d-flex flex-column align-items-start mt-2 mb-4">
+                    <label for="cardNumber" class="form-label text-nowrap text-uppercase mb-1">Card Number</label>
+                      <input type="tel" class="form-control w-100 py-1 px-1 rounded-0 bg-light-grey" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" inputmode="numeric" autocomplete="cc-number" required>
+                  </div>
+                  <div class="d-flex flex-column flex-md-row flex-lg-column flex-xl-row mb-2 gap-4" >
+                    <div class="mb-0 d-flex flex-wrap align-items-center gap-1">
+                      <label for="cardExpiry" class="form-label text-nowrap mb-0 me-2">Expiry Date</label>
+                      <div class="d-flex align-items-center gap-1">
+                        <input type="number" class="form-control py-1 px-1 bg-light-grey" id="cardExpiry" placeholder="MM" min="1" max="12" inputmode="numeric" autocomplete="cc-exp" style="width: 70px;" required>
+                        <input type="number" class="form-control py-1 px-1 bg-light-grey" id="cardExpiry" placeholder="YY" min="26" inputmode="numeric" autocomplete="cc-exp" style="width: 85px;" required>
+                      </div>
+                    </div>
+                    <div class="mb-0 d-flex align-items-center">
+                      <label for="cardCvv" class="form-label text-nowrap mb-0 me-2">CVV / CVC</label>
+                      <input type="password" class="form-control bg-light-grey" minlength="4" maxlength="4" id="cardCvv" placeholder=". . ." inputmode="numeric" autocomplete="cc-exp" style="width: 60px;" required>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-black fw-light mt-5 mb-4">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
+                <div class="mb-2 mt-2">
+                  <input type="submit"value="PLACE ORDER"class="proceed-btn btn rounded-0 checkout-btn fw-medium text-center px-6 py-2">
+                </div>
+              </div>
+              <div class="cart-totals col-12 col-lg-6 mt-6 mt-lg-0">
+                <div class="d-flex align-items-end justify-content-md-end justify-content-center">
+                <div class="cart-summary">
+                  <div class="w-75 border-bottom mb-5">
+                    <h2 class="display-2 fw-medium mb-1">Cart Totals</h2>
+                  </div>
+                  <div class="d-flex flex-column bg-light-grey-500">
+                    <div class="d-flex justify-content-between align-items-center border-bottom bg-light-grey">
+                        <div class="fw-normal ps-1 py-1">Brake Conversion Kit <span class="fw-bold">x 2</span></div>
+                        <div class="fw-normal pe-6 py-1 ms-2">	$298.00</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom">
+                        <div class="fw-normal ps-1 py-1">OE Replica Wheels <span class="fw-bold">x 2</span></div>
+                        <div class="fw-normal pe-6 py-1 ms-2">$170.00</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom bg-light-grey">
+                        <div class="fw-normal ps-1 py-1">Wheel Bearing Retainer <span class="fw-bold">x 2</span></div>
+                        <div class="fw-normal pe-6 py-1 ms-2">$150.00</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom">
+                        <div class="fw-normal ps-1 py-1">Shipping and Handing</div>
+                        <div class="fw-normal pe-6 py-1 ms-2">$15.00</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom bg-light-grey">
+                        <div class="fw-normal ps-1 py-1">Vat</div>
+                        <div class="fw-normal pe-6 py-1 ms-2">$00.00</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom">
+                      <div class="fw-bold ps-1 py-1">Order Total</div>
+                      <div class="fw-bold pe-6 py-1 ms-2">$633.00</div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+           </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="brand-partners-section bg-light-grey">
+         <div class="container">
+            <div class="swiper footerSwiper">
+              <div class="swiper-wrapper px-2 px-sm-0 py-4 py-lg-6">
+                  <div class="swiper-slide d-flex justify-content-center align-content-center brand-partner-img"><img src="./assets/images/brand-partners-img-1.webp" alt="" class="img-fluid" style="height: 80px;"></div>
+                  <div class="swiper-slide d-flex justify-content-center align-content-center brand-partner-img"><img src="./assets/images/brand-partners-img-2.webp" alt="" class="img-fluid" style="height: 80px;"></div>
+                  <div class="swiper-slide d-flex justify-content-center align-content-center brand-partner-img"><img src="./assets/images/brand-partners-img-3.webp" alt="" class="img-fluid" style="height: 80px;"></div>
+                  <div class="swiper-slide d-flex justify-content-center align-content-center brand-partner-img"><img src="./assets/images/brand-partners-img-4.webp" alt="" class="img-fluid" style="height: 80px;"></div>
+                  <div class="swiper-slide d-flex justify-content-center align-content-center brand-partner-img"><img src="./assets/images/brand-partners-img-5.webp" alt="" class="img-fluid" style="height: 80px;"></div>
+                  <div class="swiper-slide d-flex justify-content-center align-content-center brand-partner-img"><img src="./assets/images/brand-partners-img-1.webp" alt="" class="img-fluid" style="height: 80px;"></div>
+              </div>
+         </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-top bg-light-dark pt-4 pt-md-5 pt-lg-6 pt-xl-7">
+      <div class="footer-top-container container pb-5 pb-lg-6 pb-xl-7">
+          <div class="footer-wrapper row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
+          <div class="footer-links col-md-4 col-xl-2 mt-6 mt-xxl-0 d-flex flex-column align-items-start ps-3 ps-sm-0">
+              <strong class="text-white fw-medium text-uppercase mb-4 pe-7 text-nowrap">My Accoout</strong>
+              <nav class="d-flex flex-column gap-4 mt-2">
+                  <a href="./account.html" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">My account</a>
+                  <a href="./checkout.html" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Checkout</a>
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Contact us</a>
+                  <a href="./shop.html" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Shopping Cart</a>
+                  <a href="./wishlist.html" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Wishlist</a>
+              </nav>
+          </div>
+          <div class="footer-links col-md-4 col-lg-3 col-xl-2 mt-6 mt-xxl-0 d-flex flex-column align-items-start ps-3 ps-sm-0">
+              <strong class="text-white fw-medium text-uppercase mb-4 pe-7 text-nowrap">Quick Links</strong>
+              <nav class="d-flex flex-column gap-4 mt-2">
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Store Location</a>
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Orders Tracking</a>
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Size Guide</a>
+                  <a href="./account.html" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">My account</a>
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">FAQs</a>
+              </nav>
+          </div>
+          <div class="footer-links col-md-4 col-lg-3 col-xl-2 mt-6 mt-xxl-0 d-flex flex-column align-items-start ps-3 ps-sm-0">
+              <strong class="text-white fw-medium text-uppercase mb-4 pe-7 text-nowrap">Information</strong>
+              <nav class="d-flex flex-column gap-4 mt-2">
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Privacy Page</a>
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">About us</a>
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Careers</a>
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Delivery Inforamtion</a>
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Term & Conditions</a>
+              </nav>
+          </div>
+          <div class="footer-links col-md-4 col-lg-3 col-xl-2 mt-6 mt-xxl-0 d-flex flex-column align-items-start ps-3 ps-sm-0">
+              <strong class="text-white fw-medium text-uppercase mb-4 pe-7 text-nowrap">Customer Service</strong>
+              <nav class="d-flex flex-column gap-4 mt-2">
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Shipping Policy</a>
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Help & Contact Us</a>
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Returns & Refunds</a>
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Online Stores</a>
+                  <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Terms and Conditions</a>
+              </nav>
+          </div>
+          <div class="footer-links col-md-7 col-lg-7 col-xl-4 mt-6 mt-xxl-0 d-flex flex-column align-items-start ps-3 ps-sm-0">
+              <strong class="text-white fw-medium text-uppercase mb-4 pe-7 text-nowrap">About Our Shop</strong>
+              <nav class="d-flex flex-column gap-3 mt-2">
+                  <p class="text-light-grey-800 fs-14 text-decoration-none fw-normal text-sm-start text-wrap mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo incididunt ut labore et dolore</p>
+                  <div class="d-flex align-items-center gap-1"><img src="./assets/icons/location-grey.svg" alt=""><address class="text-light-grey-800 fs-14 fw-normal text-sm-start mb-0">Brooklyn, New York, United States</address></div>
+                  <div class="d-flex align-items-center gap-1"><img src="./assets/icons/telephone-grey.svg" alt=""><a href="tel:+88015-88888-9999" class="text-light-grey-800 nav-link fw-normal text-decoration-none">+88015-88888-9999</a></div>
+                  <div class="d-flex align-items-center gap-1"><img src="./assets/icons/envelope-grey.svg" alt=""><a href="mailto: example@gmail.com" class="text-light-grey-800 nav-link fw-normal text-decoration-none">example@example.com</a></div>
+                  <img src="./assets/images/footer-payment-img.webp" alt="" style="width: 197px; height: 20px;">
+              </nav>
+          </div>
+          </div>
+      </div>
+      </section>
+      <section class="footer-bottom bg-light-dark">
+      <div class="container px-0">
+          <div class="d-flex flex-column align-items-center justify-content-center flex-md-row justify-content-md-between py-2 gap-2 gap-md-0">
+          <p class="text-light-grey-800 mb-0 fs-13 fw-light">© 2026 - Just For You</p>
+          <div class="d-flex gap-3 ">
+              <img src="./assets/icons/facebook-grey.svg" alt="" class="icon-12px">
+              <img src="./assets/icons/twitter-grey.svg" alt="" class="icon-12px">
+              <img src="./assets/icons/pinterest-grey.svg" alt="" class="icon-12px">
+              <img src="./assets/icons/instagram-grey.svg" alt="" class="icon-12px">
+          </div>
+          <div class="d-none d-md-block"></div>
+          </div>
+      </div>
+      </section>
+    </footer>
+    <script type="module" src="./js/_custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+     <script>
+        $(document).ready(function () {
+            $('#billingCountry').select2({
+                placeholder: 'Select Country',
+                minimumResultsForSearch: Infinity,
+                width: '300px'
+            });
+        });
+    </script>
+    <script>
+      var footerSwiper = new Swiper(".footerSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        allowTouchMove: true, 
+        loop: true,
+        breakpoints: {
+        576: {
+          slidesPerView: 3,
+          spaceBetween: 25,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
+        1200: {
+          slidesPerView: 6,
+          spaceBetween: 30,
+        },
+      }
+      });
+    </script>
+   </body>
+</html>

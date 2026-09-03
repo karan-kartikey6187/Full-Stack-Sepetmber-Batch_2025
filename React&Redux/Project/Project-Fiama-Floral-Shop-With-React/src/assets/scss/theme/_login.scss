@@ -1,0 +1,15 @@
+@import "../theme/variables";
+
+.create-account-btn{
+    &:hover{
+        color: var(--white) !important;
+    }
+}
+
+[name="loginSubmit"] {
+    &:focus,
+    &:active {
+        background-color: var(--dark);
+        box-shadow: none;
+    }
+}

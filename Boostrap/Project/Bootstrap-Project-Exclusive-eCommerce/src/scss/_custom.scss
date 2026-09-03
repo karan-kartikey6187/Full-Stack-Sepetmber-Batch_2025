@@ -1,0 +1,162 @@
+
+.text-light-grey {
+    color: #FAFAFA;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-11 {
+    font-size: 11px;
+}
+
+.fs-32 {
+   font-size: 32px;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.py-14{
+  padding-block: 14px;
+}
+
+form {
+  > label {
+    i {
+      font-size: 16px;
+    }
+  }
+}
+
+.navbar-collapse {
+   > i {
+    font-size: 24px;
+   }
+}
+
+.nav-link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+form {
+  .form-control {
+    font-size: 12px
+  }
+}
+  
+.home-header {
+  >div:last-child{
+    height: 1px;
+  }
+}
+
+.devider-line{
+  left: 17%;
+}
+
+.shop-now-btn{
+  &::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 81px;
+  height: 1px;
+  background: $white;
+  }
+}
+
+.shop-now {
+  &::after {
+    width: 70px;
+    bottom: 0px;
+  }
+}
+
+.custom-indicators {
+  bottom: 20px;
+}
+
+.custom-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #aaa;
+  border: 2px solid white !important;
+  margin: 0 5px;
+  opacity: 1;
+}
+
+.custom-indicators .active {
+  background-color: red !important;
+}
+
+.red-dot {
+  width: 4px;
+  height: 4px
+}
+
+.flash-arrow {
+  width: 46px;
+  height: 46px;
+}
+.off-lable {
+  width: 55px;
+  height: 26px;
+  top: 2%;
+  left: 3%
+}
+
+.card-lable {
+    right: 3%;
+    width: 34px;
+    height: 34px  
+}
+
+.heart-btn {
+  top: 2%
+}
+
+.eye-btn {
+  top: 13%
+}
+
+.rating-card {
+  img:not(:nth-last-child(2)) {
+    margin-right: 4px;
+  }
+}
+
+.categories-card-wrapper {
+  .card-img-top {
+    width: 56px;
+  }
+}
+
+.new-arrival-content {
+  left: 5%;
+  bottom: 5%;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.add-to-cart-btn {
+  bottom: -40px; 
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.card:hover .add-to-cart-btn {
+  bottom: 0;
+}
